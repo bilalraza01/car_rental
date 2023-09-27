@@ -81,6 +81,8 @@ test:
 #
 production:
   <<: *default
+  host: dpg-cka0lcmv3ddc739lij40-a
+  port: 5432
   database: car_rental_production
-  username: car_rental
-  password: <%= ENV["CAR_RENTAL_DATABASE_PASSWORD"] %>
+  username: bilalraza01
+  password: <%= Rails.application.credentials.production.car_rental_database_password %>
